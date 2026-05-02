@@ -21,7 +21,7 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 
 ---
 
-##  **Features**
+## ✨ **Features**
 
 -  4x4 Grid Display  
 -  Timed Memorization Phase  
