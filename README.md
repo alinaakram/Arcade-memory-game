@@ -9,6 +9,7 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 ---
 
 ✨ Key Features
+
 🎯 4x4 Grid Display
 ⏳ Timed Memorization Phase
 🔄 Dynamic Grid Generation (not hardcoded)
