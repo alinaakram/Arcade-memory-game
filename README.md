@@ -8,14 +8,14 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 
 ---
 
-✨ Key Features
+-✨ Features
 
-🎯 4x4 Grid Display
-⏳ Timed Memorization Phase
-🔄 Dynamic Grid Generation (not hardcoded)
-🎮 User Input for Row & Column
-✅ Answer Validation System
-⚡ Optimized Delay System for smooth gameplay
+- 🎯 4x4 Grid Display  
+- ⏳ Timed Memorization Phase  
+- 🔄 Dynamic Grid Generation (not hardcoded)  
+- 🎮 User Input for Row & Column  
+- ✅ Answer Validation System  
+- ⚡ Optimized Delay System for smooth gameplay  
 ---
 
  Concepts Used
