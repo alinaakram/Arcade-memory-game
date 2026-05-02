@@ -28,7 +28,16 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 - 🔄 Dynamic Grid Generation (not hardcoded)  
 - 🎮 User Input for Row & Column  
 - ✅ Answer Validation System  
-- ⚡ Optimized Delay System for smooth gameplay  
+- ⚡ Optimized Delay System for smooth gameplay
+- 🏆   Score System:
+* +10 points for correct answer
+* -5 points for incorrect answer
+- ❤️ Lives System:
+* Player starts with 3 lives
+* Life decreases on wrong input
+
+---
+
 
 ---
 
