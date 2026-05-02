@@ -8,23 +8,13 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 
 ---
 
-## 🎯 Key Features
-
-- 🧠 Memory-based gameplay
-- 🔢 4×4 character grid system
-- 🎯 Target-based guessing (find specific letter)
-- 🏆 Score System:
-  - +10 points for correct answer
-  - -5 points for incorrect answer
-- ❤️ Lives System:
-  - Player starts with 3 lives
-  - Life decreases on wrong input
-- 🔊 Sound Effects:
-  - Beep sound on correct guess
-  - Double beep on wrong guess
-- 🔁 Continuous gameplay loop until game over
-- 🧾 Final score display
-
+✨ Key Features
+🎯 4x4 Grid Display
+⏳ Timed Memorization Phase
+🔄 Dynamic Grid Generation (not hardcoded)
+🎮 User Input for Row & Column
+✅ Answer Validation System
+⚡ Optimized Delay System for smooth gameplay
 ---
 
  Concepts Used
