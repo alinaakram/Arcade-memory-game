@@ -1,6 +1,6 @@
 # 🎮 Arcade Memory Game (8086 Assembly Language)
 
-##  Project Overview
+## 📌 Project Overview
 The **Arcade Memory Game** is a low-level programming project developed using **8086 Assembly Language**.  
 The game challenges the player's memory by displaying a grid of characters for a short duration. After the grid is hidden, the player must recall and correctly guess the position (row and column) of a given character.
 
@@ -8,14 +8,14 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 
 ---
 
-##  **Team Members**
+## 👩‍💻 **Team Members**
 
-- Alina Akram (01-135232-006)
-- Maryam  (01-135232-041)
+- Alina Akram  
+- Maryam  
 
 ---
 
-##  **Submitted To**
+## 🎓 **Submitted To**
 
 - Sir Adnan Jelani  
 
@@ -23,12 +23,12 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 
 ## ✨ **Features**
 
--  4x4 Grid Display  
--  Timed Memorization Phase  
--  Dynamic Grid Generation (not hardcoded)  
--  User Input for Row & Column  
--  Answer Validation System  
--  Optimized Delay System for smooth gameplay  
+- 🎯 4x4 Grid Display  
+- ⏳ Timed Memorization Phase  
+- 🔄 Dynamic Grid Generation (not hardcoded)  
+- 🎮 User Input for Row & Column  
+- ✅ Answer Validation System  
+- ⚡ Optimized Delay System for smooth gameplay  
 
 ---
 
