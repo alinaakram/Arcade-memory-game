@@ -6,7 +6,6 @@ The game challenges the player's memory by displaying a grid of characters for a
 
 This project demonstrates fundamental concepts of **Computer Organization and Assembly Language (COAL)**, including memory handling, control flow, and hardware-level input/output.
 
----
 ## ✨ **Features**
 
 - 🎯 4x4 Grid Display  
@@ -15,7 +14,7 @@ This project demonstrates fundamental concepts of **Computer Organization and As
 - 🎮 User Input for Row & Column  
 - ✅ Answer Validation System  
 - ⚡ Optimized Delay System for smooth gameplay  
----
+
 
 ## 📚 **Concepts Used**
 
