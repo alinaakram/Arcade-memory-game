@@ -147,7 +147,7 @@ game.exe
 
 ### **Alina Akram (01-135232-006):**
 
-*Implemented scoring, lives, and streak system
+* Implemented scoring, lives, and streak system
 * Designed UI layout and screen formatting in DOSBox
 * Developed shuffle/randomization algorithm
 * Added sound effects and game feedback system
