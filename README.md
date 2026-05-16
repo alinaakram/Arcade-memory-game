@@ -1,8 +1,12 @@
+Here is your **complete GitHub-ready report-style description with CONTRIBUTION section added** (clean, structured, and ready to paste):
+
+---
+
 # 🎮 Arcade Memory Game – 8086 Assembly Language
 
 ## 📄 Submitted To
 
-Sir Adnan Jelani
+Instructor / Course Teacher
 
 ## 👩‍💻 Submitted By
 
@@ -45,8 +49,6 @@ At the beginning of the game, a 4×4 grid of cards is displayed briefly to allow
 ---
 
 ## 🧠 Concepts Used
-
-This project is built using several core 8086 assembly concepts, including:
 
 * Arrays
 * Loops
@@ -111,23 +113,45 @@ The game stores and retrieves the highest score using a file named:
 
 Using TASM:
 
-```bash
+```bash id="4ldh9c"
 tasm game.asm
 tlink game.obj
 ```
 
 Using MASM:
 
-```bash
+```bash id="j8xq2k"
 masm game.asm;
 link game.obj;
 ```
 
 Then run:
 
-```bash
+```bash id="z2tq5p"
 game.exe
 ```
+
+---
+
+## 👥 Contribution
+
+### **Maryam (01-135232-041):**
+
+* Designed and implemented core game logic in 8086 Assembly
+* Developed memory matching system and grid structure
+* Worked on timer and interrupt handling
+* Assisted in debugging and optimization
+*  Implemented file handling for high score storage
+
+---
+
+### **Alina Akram (01-135232-006):**
+
+*Implemented scoring, lives, and streak system
+* Designed UI layout and screen formatting in DOSBox
+* Developed shuffle/randomization algorithm
+* Added sound effects and game feedback system
+* Created documentation and report formatting in LaTeX
 
 ---
 
@@ -135,4 +159,8 @@ game.exe
 
 The Arcade Memory Game project successfully demonstrates the application of 8086 assembly language in developing an interactive game. It strengthens understanding of low-level programming concepts such as interrupts, memory management, and system-level operations. The project also highlights how complex logic and gameplay mechanics can be implemented using assembly language.
 
+---
 
+If you want, I can also:
+✔ convert this into a **beautiful GitHub README with badges and icons**
+✔ or make it into a **Word/PDF final submission report**
