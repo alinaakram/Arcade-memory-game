@@ -1,7 +1,3 @@
-Here is your **complete GitHub-ready report-style description with CONTRIBUTION section added** (clean, structured, and ready to paste):
-
----
-
 # 🎮 Arcade Memory Game – 8086 Assembly Language
 
 ## 📄 Submitted To
