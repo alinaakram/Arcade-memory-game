@@ -2,12 +2,12 @@
 
 ## 📄 Submitted To
 
-Instructor / Course Teacher
+Sir Adnan Jelani
 
 ## 👩‍💻 Submitted By
 
-Maryam
-Alina Akram
+Maryam (01-135232-041)
+Alina Akram (01-135232-006)
 
 ---
 
