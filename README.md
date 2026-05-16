@@ -1,73 +1,139 @@
-# 🎮 Arcade Memory Game (8086 Assembly Language)
+# 🎮 Arcade Memory Game – 8086 Assembly Language
 
-## 📌 Project Overview
-The **Arcade Memory Game** is a low-level programming project developed using **8086 Assembly Language**.  
-The game challenges the player's memory by displaying a grid of characters for a short duration. After the grid is hidden, the player must recall and correctly guess the position (row and column) of a given character.
-
-This project demonstrates fundamental concepts of **Computer Organization and Assembly Language (COAL)**, including memory handling, control flow, and hardware-level input/output.
+An interactive console-based memory matching game developed using **8086 Assembly Language**.  
+This project demonstrates low-level programming concepts including arrays, loops, procedures, interrupts, timers, sound effects, file handling, randomization, and screen management.
 
 ---
 
-## 👩‍💻 **Team Members**
+## ✨ Features
 
-- Alina Akram  
-- Maryam  
-
----
-
-## 🎓 **Submitted To**
-
-- Sir Adnan Jelani  
-
----
-
-## ✨ **Features**
-
-- 🎯 4x4 Grid Display  
-- ⏳ Timed Memorization Phase  
-- 🔄 Dynamic Grid Generation (not hardcoded)  
-- 🎮 User Input for Row & Column  
-- ✅ Answer Validation System  
-- ⚡ Optimized Delay System for smooth gameplay
-- 🏆   Score System:
-* +10 points for correct answer
-* -5 points for incorrect answer
-- ❤️ Lives System:
-* Player starts with 3 lives
-* Life decreases on wrong input
+- 🧠 4×4 memory matching game
+- 🔀 Randomized card shuffling (Fisher-Yates algorithm)
+- 🏆 Score and streak bonus system
+- ⏳ 3-minute countdown timer
+- ❤️ Lives system
+- 💡 Hint system
+- 🔊 Sound effects
+- 💾 High score saving using file handling
+- 🎯 Win / Game Over / Timeout states
+- 🎨 Colored console interface
 
 ---
 
+## 🛠 Technologies Used
+
+| Technology             | Purpose                 |
+|------------------------|------------------------|
+| 8086 Assembly Language | Core Programming        |
+| MASM / TASM            | Assembler               |
+| DOSBox                 | Emulator                |
+| BIOS Interrupts        | Timer, Screen, Keyboard |
+| DOS Interrupts         | File Handling & Output  |
 
 ---
 
-## 📚 **Concepts Used**
+## 📜 Game Rules
 
-This project covers key **assembly-level programming concepts**:
-
-- 8086 Architecture
-- Data Segment & Code Segment handling
-- Registers (AX, BX, CX, DX, SI)
-- Arrays (grid storage in memory)
-- Procedures (PROC / ENDP)
-- Loops and conditional jumps
-- Interrupts:
-  - `INT 21h` → input/output operations
-- Delay loops for timing control
-- Basic game logic implementation
+1. The player memorizes the displayed grid.
+2. Cards are shown for 4 seconds, then hidden.
+3. The player selects two positions.
+4. If both cards match:
+   - Score increases
+   - Cards remain visible
+   - Bonus streak may apply
+5. If cards do not match:
+   - One life is lost
+   - Score decreases
+6. The game is won when all pairs are matched.
 
 ---
 
-## 🎮 How the Game Works
+## 🧩 Concepts Used
 
-1. The game displays a 4×4 grid of characters.
-2. The player is given a few seconds to memorize it.
-3. The grid is hidden.
-4. A target character is shown.
-5. The player enters:
-   - Row number (0–3)
-   - Column number (0–3)
-6. The program checks if the guess is correct:
-   - ✅ Correct → Score increases
-   - ❌ Wrong → Score decreases & life lost
-7. Game continues until all lives are finished.
+- Arrays
+- Loops
+- Procedures
+- Macros
+- Stack Operations
+- BIOS Interrupts
+- DOS Interrupts
+- Random Number Generation
+- Fisher-Yates Shuffle Algorithm
+- Timer Handling
+- File Handling
+- Sound Generation
+
+---
+
+## ⚙️ Important Procedures
+
+| Procedure         | Purpose                  |
+|------------------|--------------------------|
+| `shuffle`         | Random card shuffling    |
+| `rand`            | Random number generator  |
+| `show_grid`       | Display full board       |
+| `show_hidden`     | Display hidden board     |
+| `calc1 / calc2`   | Index calculation        |
+| `reveal`          | Reveal matched cards     |
+| `print_num`       | Print numbers            |
+| `load_high_score` | Load saved score         |
+| `save_high_score` | Save high score          |
+
+---
+
+## 🔌 Interrupts Used
+
+| Interrupt | Purpose         |
+|----------|-----------------|
+| INT 21H  | DOS Services     |
+| INT 10H  | Video Services   |
+| INT 16H  | Keyboard Input   |
+| INT 1AH  | System Timer     |
+
+---
+
+## 💾 File Handling
+
+High score is stored in:
+
+### File Operations:
+- Create file
+- Open file
+- Read file
+- Write file
+- Close file
+
+---
+
+## 🖼 Screenshots
+
+### 🎮 Game Start
+![Game Start](gamestart.jpeg)
+
+### 🎲 Gameplay
+![Gameplay](running game.jpeg)
+
+### 🎯 Match Found
+![Match](MATCH.jpeg)
+
+### ⭐ Bonus Score
+![Bonus](BONUS.jpeg)
+
+### 🏆 Game Won
+![Won](won.jpeg)
+
+### 💀 Game Over
+![Game Over](over.jpeg)
+
+### ⏰ Time Out
+![Timeout](timeout.jpeg)
+
+---
+
+## 🚀 How to Run
+
+### Requirements
+- DOSBox
+- MASM or TASM Assembler
+
+
