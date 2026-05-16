@@ -1,139 +1,138 @@
 # 🎮 Arcade Memory Game – 8086 Assembly Language
 
-An interactive console-based memory matching game developed using **8086 Assembly Language**.  
-This project demonstrates low-level programming concepts including arrays, loops, procedures, interrupts, timers, sound effects, file handling, randomization, and screen management.
+## 📄 Submitted To
+
+Instructor / Course Teacher
+
+## 👩‍💻 Submitted By
+
+Maryam
+Alina Akram
+
+---
+
+## 📌 Project Overview
+
+The Arcade Memory Game is an interactive console-based game developed using 8086 Assembly Language. It demonstrates fundamental and advanced concepts of low-level programming such as memory management, interrupts, loops, procedures, arrays, file handling, and random number generation. The game is designed as a 4×4 memory matching puzzle where the player must find all matching pairs within a limited time.
+
+---
+
+## 🎯 Objective
+
+The main objective of this project is to apply 8086 assembly language concepts in a practical and interactive application. It helps in understanding system-level programming, hardware interaction through interrupts, and efficient memory usage in a real-time game environment.
+
+---
+
+## 🎮 Game Description
+
+At the beginning of the game, a 4×4 grid of cards is displayed briefly to allow the player to memorize the positions. After a few seconds, the grid is hidden, and the player starts selecting two positions at a time to find matching pairs. If both selected cards match, the score increases and the cards remain revealed. If they do not match, the player loses a life and may receive a score penalty. The game continues until all pairs are matched, the timer runs out, or all lives are lost.
 
 ---
 
 ## ✨ Features
 
-- 🧠 4×4 memory matching game
-- 🔀 Randomized card shuffling (Fisher-Yates algorithm)
-- 🏆 Score and streak bonus system
-- ⏳ 3-minute countdown timer
-- ❤️ Lives system
-- 💡 Hint system
-- 🔊 Sound effects
-- 💾 High score saving using file handling
-- 🎯 Win / Game Over / Timeout states
-- 🎨 Colored console interface
+* 4×4 memory matching board
+* Randomized card shuffling using Fisher-Yates algorithm
+* Score and streak bonus system
+* 3-minute countdown timer
+* Lives system
+* Hint feature
+* Sound effects for interactions
+* High score saving using file handling
+* Win, Game Over, and Timeout conditions
+* Colored console-based interface
 
 ---
 
-## 🛠 Technologies Used
+## 🧠 Concepts Used
 
-| Technology             | Purpose                 |
-|------------------------|------------------------|
-| 8086 Assembly Language | Core Programming        |
-| MASM / TASM            | Assembler               |
-| DOSBox                 | Emulator                |
-| BIOS Interrupts        | Timer, Screen, Keyboard |
-| DOS Interrupts         | File Handling & Output  |
+This project is built using several core 8086 assembly concepts, including:
 
----
-
-## 📜 Game Rules
-
-1. The player memorizes the displayed grid.
-2. Cards are shown for 4 seconds, then hidden.
-3. The player selects two positions.
-4. If both cards match:
-   - Score increases
-   - Cards remain visible
-   - Bonus streak may apply
-5. If cards do not match:
-   - One life is lost
-   - Score decreases
-6. The game is won when all pairs are matched.
+* Arrays
+* Loops
+* Procedures
+* Macros
+* Stack operations
+* BIOS interrupts
+* DOS interrupts
+* Random number generation
+* Timer handling
+* File handling
+* Screen manipulation
+* Sound generation
 
 ---
 
-## 🧩 Concepts Used
+## ⚙️ Interrupts Used
 
-- Arrays
-- Loops
-- Procedures
-- Macros
-- Stack Operations
-- BIOS Interrupts
-- DOS Interrupts
-- Random Number Generation
-- Fisher-Yates Shuffle Algorithm
-- Timer Handling
-- File Handling
-- Sound Generation
-
----
-
-## ⚙️ Important Procedures
-
-| Procedure         | Purpose                  |
-|------------------|--------------------------|
-| `shuffle`         | Random card shuffling    |
-| `rand`            | Random number generator  |
-| `show_grid`       | Display full board       |
-| `show_hidden`     | Display hidden board     |
-| `calc1 / calc2`   | Index calculation        |
-| `reveal`          | Reveal matched cards     |
-| `print_num`       | Print numbers            |
-| `load_high_score` | Load saved score         |
-| `save_high_score` | Save high score          |
-
----
-
-## 🔌 Interrupts Used
-
-| Interrupt | Purpose         |
-|----------|-----------------|
-| INT 21H  | DOS Services     |
-| INT 10H  | Video Services   |
-| INT 16H  | Keyboard Input   |
-| INT 1AH  | System Timer     |
+* INT 21H – DOS services (input/output and file handling)
+* INT 10H – Video services (screen display and control)
+* INT 16H – Keyboard input handling
+* INT 1AH – System timer services
 
 ---
 
 ## 💾 File Handling
 
-High score is stored in:
+The game stores and retrieves the highest score using a file named:
+
+**HI.DAT**
 
 ### File Operations:
-- Create file
-- Open file
-- Read file
-- Write file
-- Close file
+
+* Create file
+* Open file
+* Read file
+* Write file
+* Close file
 
 ---
 
-## 🖼 Screenshots
+## 🧩 Important Functionalities
 
-### 🎮 Game Start
-![Game Start](gamestart.jpeg)
-
-### 🎲 Gameplay
-![Gameplay](running game.jpeg)
-
-### 🎯 Match Found
-![Match](MATCH.jpeg)
-
-### ⭐ Bonus Score
-![Bonus](BONUS.jpeg)
-
-### 🏆 Game Won
-![Won](won.jpeg)
-
-### 💀 Game Over
-![Game Over](over.jpeg)
-
-### ⏰ Time Out
-![Timeout](timeout.jpeg)
+* Card shuffling using Fisher-Yates algorithm
+* Grid display and hiding logic
+* Index calculation for selected positions
+* Matching and revealing logic
+* Score calculation system
+* High score management
+* Timer-based gameplay control
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run the Project
 
-### Requirements
-- DOSBox
-- MASM or TASM Assembler
+### Requirements:
+
+* DOSBox emulator
+* MASM or TASM assembler
+
+### Steps:
+
+Using TASM:
+
+```bash
+tasm game.asm
+tlink game.obj
+```
+
+Using MASM:
+
+```bash
+masm game.asm;
+link game.obj;
+```
+
+Then run:
+
+```bash
+game.exe
+```
+
+---
+
+## 📄 Conclusion
+
+The Arcade Memory Game project successfully demonstrates the application of 8086 assembly language in developing an interactive game. It strengthens understanding of low-level programming concepts such as interrupts, memory management, and system-level operations. The project also highlights how complex logic and gameplay mechanics can be implemented using assembly language.
 
 
